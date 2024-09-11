@@ -1,0 +1,34 @@
+{
+  "seller": [
+    {
+      "id": "8cb3",
+      "name": "Sajol",
+      "password": "123456",
+      "email": "sajol@test.com"
+    },
+    {
+      "id": "a514",
+      "name": "peter",
+      "password": "123456",
+      "email": "peter@test.com"
+    },
+    {
+      "id": "52a5",
+      "name": "test",
+      "password": "123456",
+      "email": "test@test.com"
+    },
+    {
+      "id": "8d99",
+      "name": "test2",
+      "password": "123456",
+      "email": "teststore09@leapinglogic.com"
+    },
+    {
+      "id": "3922",
+      "name": "dev test",
+      "password": "123456",
+      "email": "teststore093@leapinglogic.com"
+    }
+  ]
+}
