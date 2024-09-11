@@ -13,11 +13,10 @@
 
         </ul>
         <ul *ngSwitchCase="'seller'">
-            <li><a routerLink="/" routerLinkActive="active">Product List</a></li>
-            <li><a routerLink="/seller-auth" routerLinkActive="active">Product Create</a></li>
-            <li><a routerLink="#" routerLinkActive="active">Logout</a></li>
-            <li><a routerLink="#" routerLinkActive="active">Seller Name</a></li>
-
+            <li><a routerLink="/seller-home" routerLinkActive="active">Product List</a></li>
+            <li><a routerLink="seller/add-product" routerLinkActive="active">Product Create</a></li>
+            <li><a (click)="logout()">Logout</a></li>
+            <li><a routerLink="#" routerLinkActive="active">{{ seller.name }}</a></li>
         </ul>
     </div>
 </nav>

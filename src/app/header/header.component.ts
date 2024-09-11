@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   menuType: string = 'seller'
+  seller: any = {}
 
   constructor(private router: Router){
 
@@ -16,8 +17,11 @@ export class HeaderComponent {
   ngOnInit(): void {
     this.router.events.subscribe((val: any) => {
        if(val.url){
-          if(localStorage.getItem('seller') && val.url.includes('seller')){
+        let seller = localStorage.getItem('seller')
+          if(seller && val.url.includes('seller')){
             this.menuType = 'seller';
+            seller = JSON.parse(seller)[0]
+            this.seller = seller
           }else{
             this.menuType = 'default';
           }
