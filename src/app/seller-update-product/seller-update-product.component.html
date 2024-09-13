@@ -1,14 +1,15 @@
 <div class="add-product">
     <h1>Add New Product</h1>
-    <p class="message-p">{{productCreateMessage}}</p>
-    <form #addProductForm="ngForm"
-    (ngSubmit)="addProduct(addProductForm.value)"
+    <p class="message-p">{{ message }}</p>
+    <form #updateProductForm="ngForm"
+    (ngSubmit)="updateProduct(updateProductForm.value)"
      class="common-form">
       <input
         type="text"
         class="form-input"
         placeholder="Enter Product Name"
         name="name"
+        [value]="product?.name"
         ngModel
       />
       <input
@@ -16,6 +17,7 @@
       class="form-input"
       placeholder="Enter Product Price"
       name="price"
+      [value]="product?.price"
       ngModel
     />
     <input
@@ -23,6 +25,7 @@
     class="form-input"
     placeholder="Enter Product Category"
     name="category"
+    [value]="product?.category"
     ngModel
   />
   <input
@@ -30,6 +33,7 @@
   class="form-input"
   placeholder="Enter Product Color"
   name="color"
+  [value]="product?.color"
   ngModel
   />
   <textarea
@@ -37,6 +41,7 @@
   class="form-input"
   placeholder="Enter Product Description"
   name="description"
+  [value]="product?.description"
   ngModel
   ></textarea>
   
@@ -45,9 +50,10 @@
   class="form-input"
   placeholder="Enter Product Image URL"
   name="image"
+  [value]="product?.image"
   ngModel
   />
-  <button class="form-button">Add Product</button>
+  <button class="form-button">Update Product</button>
   
     </form>
   </div>

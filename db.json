@@ -5,30 +5,17 @@
       "name": "Sajol",
       "password": "123456",
       "email": "sajol@test.com"
-    },
+    }
+  ],
+  "products": [
     {
-      "id": "a514",
-      "name": "peter",
-      "password": "123456",
-      "email": "peter@test.com"
-    },
-    {
-      "id": "52a5",
-      "name": "test",
-      "password": "123456",
-      "email": "test@test.com"
-    },
-    {
-      "id": "8d99",
-      "name": "test2",
-      "password": "123456",
-      "email": "teststore09@leapinglogic.com"
-    },
-    {
-      "id": "3922",
-      "name": "dev test",
-      "password": "123456",
-      "email": "teststore093@leapinglogic.com"
+      "name": "Iphone 14 - pro",
+      "price": "10",
+      "category": "Mobile",
+      "color": "black",
+      "description": "testt",
+      "image": "https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/article/Apple-iPhone-15-lineup-hero-230912_inline.jpg.large_2x.jpg",
+      "id": "e239"
     }
   ]
 }
