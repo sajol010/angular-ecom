@@ -20,7 +20,7 @@
             <td>{{ item.color }}</td>
             <td>{{ item.category }}</td>
             <td>
-                <a [routerLink]="'/seller/update-product/'+item.id"><fa-icon [icon] = "icon.coffee" ></fa-icon></a>
+                <a [routerLink]="'/seller/update-product/'+item.id"><fa-icon [icon] = "icon.edit" ></fa-icon></a>
                 <button><fa-icon [icon]="icon.delete" (click)="deleteProduct(item.id)"></fa-icon></button>
             </td>
         </tr>

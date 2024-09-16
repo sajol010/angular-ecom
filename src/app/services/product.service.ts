@@ -28,4 +28,8 @@ export class ProductService {
   getProductById(id: string){
     return this.http.get<Product>(`http://localhost:3000/products/${id}`);
   }
-}
+
+  serachProducts(query: string){
+    return this.http.get<Product[]>(`http://localhost:3000/products?q=${query}`);
+  }
+} 

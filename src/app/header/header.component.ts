@@ -1,3 +1,4 @@
+import { ProductService } from './../services/product.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -9,8 +10,8 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   menuType: string = 'seller'
   seller: any = {}
-
-  constructor(private router: Router){
+  searchResult: any = []
+  constructor(private router: Router, private productService: ProductService){
 
   }
 
@@ -28,6 +29,32 @@ export class HeaderComponent {
        }
     })
     
+  }
+
+  searchProduct(query: KeyboardEvent){
+      if(query){
+        const element = query.target as HTMLInputElement;
+        if(element.value){
+          this.productService.serachProducts(element.value).subscribe((result) => {
+            if(result.length>5){
+              result.length=length
+            }
+            this.searchResult=result;
+          })
+        }
+      }
+  }
+
+  redirectToDetails(id:string){
+    this.router.navigate(['/details/'+id])
+  }
+
+  submitSearch(val: string){
+    this.router.navigate([`search/${val}`]);
+  }
+
+  hideSearch(){
+    this.searchResult=undefined
   }
 
   logout(): void{

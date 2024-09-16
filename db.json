@@ -9,13 +9,31 @@
   ],
   "products": [
     {
+      "id": "1ce3",
       "name": "Iphone 14 - pro",
-      "price": "10",
+      "price": "100000",
       "category": "Mobile",
       "color": "black",
-      "description": "testt",
+      "description": "test",
+      "image": "https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/article/Apple-iPhone-15-lineup-hero-230912_inline.jpg.large_2x.jpg"
+    },
+    {
+      "name": "Iphone 14",
+      "price": "100000",
+      "category": "Mobile",
+      "color": "black",
+      "description": "test",
       "image": "https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/article/Apple-iPhone-15-lineup-hero-230912_inline.jpg.large_2x.jpg",
-      "id": "e239"
+      "id": "8afa"
+    },
+    {
+      "id": "0dcc",
+      "name": "dev test",
+      "price": "100",
+      "category": "Mobile",
+      "color": "black",
+      "description": "test",
+      "image": "https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/article/Apple-iPhone-15-lineup-hero-230912_inline.jpg.large_2x.jpg"
     }
   ]
 }
